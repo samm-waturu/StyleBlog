@@ -124,7 +124,7 @@ export default function Post(props, pathPrefix) {
 
                     */}
 
-                    <DisqusComments key={post.id} title={post.title} id={post._id} slug={`http://localhost:3000/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                    <DisqusComments key={post.id} title={post.title} id={post._id} slug={`https://style-book.vercel.app/post/${pathPrefix ? `${pathPrefix}/` : ""}${
                         post.slug.current
                     }`} />
 
