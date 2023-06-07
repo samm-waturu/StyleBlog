@@ -58,8 +58,7 @@ export default function Contact({ settings }) {
             Contact us
           </h2>
           <p className="max-w-sm mt-5">
-            Have something to say? We are here to help. Fill up the
-            form or send email or call phone.
+            Having fit out trouble? Have an event coming up and don't know what to wear? Find tips on stylebook, or drop me a message.
           </p>
 
           <div className="mt-5">
