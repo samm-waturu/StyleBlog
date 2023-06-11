@@ -5,3 +5,5 @@ Allow: /
 # Host
 Host: https://style-book.vercel.app
 
+# Sitemaps
+Sitemap: https://style-book.vercel.app/sitemap.xml
