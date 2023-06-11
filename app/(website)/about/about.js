@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {PortableText} from "@/lib/sanity/plugins/portabletext";
 
-export default function About({authors, settings}) {
+export default function About({authors}) {
     return (
         <Container>
             <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
@@ -66,7 +66,6 @@ export default function About({authors, settings}) {
                             </>
                         )
                     })}
-
 
                 <p>
                     <Link href="/contact">Get in touch</Link>
