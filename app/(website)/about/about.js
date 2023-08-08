@@ -8,10 +8,10 @@ export default function About({authors}) {
     return (
         <Container>
             <div className="mx-auto prose text-center dark:prose-invert mt-14">
-                    {authors.slice(0, 3).map(author => {
+                    {authors?.map(author => {
                         return(
                             <>
-                            <PortableText value={author.bio}/>
+                            <PortableText value={author?.bio}/>
                             </>
                         )
                     })}
