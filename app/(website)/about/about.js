@@ -1,4 +1,5 @@
 import Container from "@/components/container";
+import { PortableText } from "@/lib/sanity/plugins/portabletext";
 import Link from "next/link";
 
 export default function About({authors, settings}) {
@@ -11,11 +12,22 @@ export default function About({authors, settings}) {
                 <p className="text-lg">About StyleBook</p>
             </div>
             <div className="mx-auto prose text-center dark:prose-invert mt-14">
-                <p>
+                <p> 
+
         {
-            authors.bio
+            authors.map(author => {
+                return (
+                <div key = author._id> 
+                    <p> 
+                    {author.bio && <PortableText value = {author.bio}}
+                    <P/>
+                <div/>
+                )
+            })
         }
+        
                 </p>
+           
                 <p>
                     <Link href="/contact">Get in touch</Link>
                 </p>
