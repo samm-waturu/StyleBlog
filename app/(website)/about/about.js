@@ -12,8 +12,9 @@ export default function About({authors, settings}) {
             </div>
             <div className="mx-auto prose text-center dark:prose-invert mt-14">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae.
+        {
+            authors.bio
+        }
                 </p>
                 <p>
                     <Link href="/contact">Get in touch</Link>
