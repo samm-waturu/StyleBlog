@@ -47,15 +47,15 @@ export default function PostList({
               {imageProps ? (
                   <Image
                       src={imageProps.src}
-                    /*  {...(post.mainImage.blurDataURL && {
+                     {...(post.mainImage.blurDataURL && {
                         placeholder: "blur",
                         blurDataURL: post.mainImage.blurDataURL
-                      })}*/
+                      })}
                       alt={post.mainImage.alt || "Thumbnail"}
                       priority={preloadImage ? true : false}
                       className="object-cover transition-all"
                       fill
-                      sizes="(max-width: 768px) 30vw, 33vw"
+                      sizes="(max-width: 768px) 90vw, 99vw"
                   />
               ) : (
                   <span className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 text-gray-200">
