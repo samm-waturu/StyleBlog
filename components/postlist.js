@@ -47,10 +47,10 @@ export default function PostList({
               {imageProps ? (
                   <Image
                       src={imageProps.src}
-                      {...(post.mainImage.blurDataURL && {
+                    /*  {...(post.mainImage.blurDataURL && {
                         placeholder: "blur",
                         blurDataURL: post.mainImage.blurDataURL
-                      })}
+                      })}*/
                       alt={post.mainImage.alt || "Thumbnail"}
                       priority={preloadImage ? true : false}
                       className="object-cover transition-all"

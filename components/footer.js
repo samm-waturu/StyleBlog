@@ -8,7 +8,7 @@ export default function Footer(props) {
         <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
             <div className="text-center text-sm">
                 <a
-                    href="https://bytebuds-io.web.app"
+                    href="https://bytebuds-alt.vercel.app/"
                     target="_blank"
                     rel="noopener"
                     className={"font-light"}>
